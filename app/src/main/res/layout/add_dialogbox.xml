@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#555555">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="#555555">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:text="@string/add_subject"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="23sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_box"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sub_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start|center"
+                android:hint="@string/sub_name"
+                android:textColorHint="#E6E6E6"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/subject_box"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            app:errorEnabled="true"
+            app:hintAnimationEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sub_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="start|center"
+                android:hint="@string/sub_code"
+                android:textColorHint="#E6E6E6"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="1dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/min_attendance"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/percentage"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:autofillHints="@string/min"
+                android:gravity="center"
+                android:hint="@string/min"
+                android:inputType="number"
+                android:textColorHint="#E6E6E6"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/class_start"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/date_format"
+                android:gravity="center|start"
+                android:textColorHint="#E6E6E6"
+                android:textColor="#FFFFFF"
+                android:inputType="date"
+                android:autofillHints="@string/date_format"/>
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/calender" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/class_days"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="70dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day1"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_days"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day2"
+                android:textSize="20sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:background="@drawable/selected_days"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day3"
+                android:textSize="20sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:background="@drawable/selected_days"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day4"
+                android:textSize="20sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:background="@drawable/rounded_days"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day5"
+                android:textSize="20sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:background="@drawable/selected_days"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day6"
+                android:textSize="20sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:background="@drawable/rounded_days"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/info"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="50dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/info"
+                android:textColor="#CCCCCC"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="10dp"
+    android:background="#333333">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#454545"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sub_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/sub_name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_marginTop="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sub_code"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/sub_code"
+                android:textColor="#DDDDDD"
+                android:textSize="13sp"
+                android:textAllCaps="true"
+                android:gravity="top|start"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/left_count"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/leaves_count"
+                android:textColor="#0ADCC0"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/left_leaves"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/leaves_left"
+                android:textColor="#DDDDDD"
+                android:textSize="13sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/absent_count"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/absent_count"
+                android:textColor="#D50000"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/absent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/absent"
+                android:textColor="#DDDDDD"
+                android:textSize="13sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
